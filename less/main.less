@@ -8,7 +8,7 @@
  * Core imports
  */
 
-@import "_normalize.less";
+@import "_reset.less";
 @import "_base.less";
 @import "_fonts.less";
 @import "_mixins.less";
@@ -17,12 +17,12 @@
  * Media queries
  */
 
+@media only screen and (min-width: 481px) {
+    @import "_481up.less";
+}
+@media only screen and (min-width: 600px) {
+    @import "_600up.less";
+}
 @media only screen and (min-width: 768px) {
     @import "_768up.less";
-}
-@media only screen and (min-width: 992px) {
-    @import "_992up.less";
-}
-@media only screen and (min-width: 1200px) {
-    @import "_1200up.less";
 }
